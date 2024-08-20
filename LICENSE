@@ -1,21 +1,44 @@
-MIT License
+## SQM Software License Agreement ## 
+SQM (SQL Query Management)
+Chris Jones
+Letterfell LLP
+Version: 1.0.0
+Date: 08/21/2024
 
-Copyright (c) 2024 cxj05h
+1. Grant of License
+This License Agreement ("Agreement") is made between Chris Jones ("Licensor"), under Letterfell LLP, and [Company Name] ("Licensee"). Licensor grants Licensee a non-exclusive, non-transferable, and revocable license to use the SQM software ("Software") solely for internal purposes within Licensee's organization.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+2. Ownership and Intellectual Property
+The Software, including all modifications, enhancements, updates, and derivative works, is and shall remain the sole property of Chris Jones, under Letterfell LLP. Licensee acknowledges and agrees that it shall not acquire any ownership rights, title, or interest in the Software.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+3. Permitted Use
+Licensee is authorized to:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Install and use the Software within Licensee's organization.
+Access and utilize the Software for managing SQL queries as intended by the Software's design.
+4. Restrictions
+Licensee shall not:
+
+Modify, adapt, translate, reverse-engineer, decompile, disassemble, or create derivative works based on the Software.
+Sell, rent, lease, distribute, or transfer the Software to any third party without the express written consent of Licensor.
+Remove or alter any proprietary notices or labels on the Software, including copyright notices.
+5. Attribution
+Licensee agrees to credit Chris Jones and Letterfell LLP as the sole creators of the Software in any documentation, presentations, or other materials where the Software is referenced.
+
+6. Confidentiality
+Licensee agrees to treat the Software as confidential and shall not disclose, provide, or otherwise make available the Software to any third party without the prior written consent of Licensor.
+
+7. Limitation of Liability
+To the maximum extent permitted by applicable law, in no event shall Chris Jones, under Letterfell LLP, be liable for any special, incidental, indirect, or consequential damages whatsoever arising out of the use of or inability to use the Software.
+
+8. Termination
+This Agreement is effective until terminated. Licensee's rights under this Agreement will terminate automatically without notice if Licensee fails to comply with any term(s) of this Agreement. Upon termination, Licensee must cease all use of the Software and destroy all copies of the Software.
+
+9. Governing Law
+This Agreement shall be governed by and construed in accordance with the laws of [Your State/Country]. Any disputes arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of [Your State/Country].
+
+10. Entire Agreement
+This Agreement constitutes the entire understanding between the parties regarding the Software and supersedes all prior agreements, understandings, and communications, whether written or oral, relating to the subject matter of this Agreement.
+
+By using the SQM software, you acknowledge that you have read this Agreement, understand it, and agree to be bound by its terms and conditions.
+
