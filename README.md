@@ -28,7 +28,7 @@ Installer for updates to SQM
     - To use {names_clause} in a query, place it after 'WHERE'
       #### Example for how to write it in a saved query:
         *SELECT epi_lastname, epi_firstname, epi_mi, epi_id from client_episodes_all WHERE {names_clause}*
-- If a customer just provides a bunch of numbers, whether it's episode IDs or order IDs and it's not simple to just highlight them all, you can also go to Advanced > Parse Orders/Parse Episodes and there you'll receive a dialog box with a number. That number is the number of characters it will parse for. For example, typically order IDs are 6-7 digits so you can select "Parse Orders" choose the digit count (you can hover over the field and use the mouse wheel to scroll up and down to select the number) and hit parse.
+- If a customer just provides a bunch of numbers, whether it's episode IDs or order IDs and it's not simple to just highlight them all, you can also go to Advanced > Parse Orders/Parse Episodes and there you'll receive a dialog box with a number. That number is the number of characters it will parse for. For example, typically order IDs are 6-7 digits so you can select "Parse Orders" choose the digit count (you can hover over the field and use the mouse wheel to scroll up and down to select the number) and hit parse. If you don't have Stephan's AHK script for comma-separated pastes, this is the best, really.
 
 ### Generating Statements
 
