@@ -25,9 +25,9 @@ Installer for updates to SQM
 - Use the "Parse Dates", "Parse pt. Data" (MR Numbers), "Parse Epi", and "Parse Orders" & "Parse Service Code" buttons to automatically extract information from the notepad text.
 - The "Parse All" button will attempt to extract all types of data at once. (This will also include patientIDs. **(Ctrl + Shift + Space)**
 - The button "Convert Names" will take a patient name from the notepad field and place it into the "Multiple Names" custom field where it will be formatted correctly to be parsed into the {names_clause} placeholder. You will need to highlight the name first and then hit the button "Convert Nmes". It will take Firstname Lastname and convert it into Lastname, Firstname MI. If you highlight multiple names, they will all be formated as mentioned but separated by a |. This is how the {names_clause} reads multiple names.
-    - To use {names_clause} in a query, place it after 'WHERE' in a SQL query.
+    - To use {names_clause} in a query, place it after 'WHERE'
       #### Example for how to write it in a saved query:
-        **SELECT epi_lastname, epi_firstname, epi_mi, epi_id from client_episodes_all WHERE {names_clause}**
+        *SELECT epi_lastname, epi_firstname, epi_mi, epi_id from client_episodes_all WHERE {names_clause}*
 
 ### Generating Statements
 
