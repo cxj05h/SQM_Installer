@@ -15,7 +15,7 @@ Installer for updates to SQM
 
 ### Populating Queries
 
-1. Fill in the relevant patient data fields (Patient Data Management--PDM) on the left side of the interface. **(Ctrl + Shift + Space) to get all data from the customer request. See "Parse All"**
+1. Fill in the relevant patient data fields (Patient Data Management--**PDM**) on the left side of the interface. **(Ctrl + Shift + Space) to get all data from the customer request. See "Parse All"**
 2. Select a query from the list on the right.
 3. Click "Populate Query" to insert the data into the selected query template. **(Ctrl + Enter)**
 4. The populated query will appear in the bottom right text area, ready to be copied and executed. Once "populate query" runs, the populated query is automatically copied to your clipboard, but there's also a button there.
