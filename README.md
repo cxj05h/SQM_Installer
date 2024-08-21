@@ -11,7 +11,7 @@ Installer for updates to SQM
 - To edit an existing query, select it from the list and click "Edit Query".
 - Use the search box to quickly find specific queries. **(Ctrl + F)**
 - Use the "Backup Queries" feature to save a zip file of all your saved queries.
-- Check out the query history folder. This folder is updated with in a "before and after" snapshot of the individual query you have edited and saved. These files can be removed as needed
+- Check out the query history folder. This folder is updated with a "before and after" snapshot of the individual query you have edited and saved. These files can be removed as needed
 
 ### Populating Queries
 
