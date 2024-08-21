@@ -15,7 +15,7 @@ Installer for updates to SQM
 
 ### Populating Queries
 
-1. Fill in the relevant patient data fields on the left side of the interface. **(Ctrl + Shift + Space) to get all data from the customer request. See "Parse All"**
+1. Fill in the relevant patient data fields (Patient Data Management--PDM) on the left side of the interface. **(Ctrl + Shift + Space) to get all data from the customer request. See "Parse All"**
 2. Select a query from the list on the right.
 3. Click "Populate Query" to insert the data into the selected query template. **(Ctrl + Enter)**
 4. The populated query will appear in the bottom right text area, ready to be copied and executed. Once "populate query" runs, the populated query is automatically copied to your clipboard, but there's also a button there.
@@ -28,7 +28,10 @@ Installer for updates to SQM
     - To use {names_clause} in a query, place it after 'WHERE'
       #### Example for how to write it in a saved query:
         *SELECT epi_lastname, epi_firstname, epi_mi, epi_id from client_episodes_all WHERE {names_clause}*
+      
 - If a customer just provides a bunch of numbers, whether it's episode IDs or order IDs and it's not simple to just highlight them all, you can also go to Advanced > Parse Orders/Parse Episodes and there you'll receive a dialog box with a number. That number is the number of characters it will parse for. For example, typically order IDs are 6-7 digits so you can select "Parse Orders" choose the digit count (you can hover over the field and use the mouse wheel to scroll up and down to select the number) and hit parse. If you don't have Stephan's AHK script for comma-separated pastes, this is the best, really.
+- Most requests have multiple dates and service codes in the text. When you "Parse Service Code" or "Parse Dates" (also included in "Parse All"), a dialogue box will appear for you to select which dates and service codes you want populated into PDM. Dates will always appear in the {Date} custom field, and service codes always in the {Service_Code} field.
+    - When the box appears, hitting "**Enter**" once will load all the dates available and hitting it again will select "Ok". This applies to both SC and Dates.
 
 ### Generating Statements
 
@@ -41,10 +44,12 @@ Installer for updates to SQM
 
 - Custom fields can be added or removed by editing the `custom_fields_order.json` file and the text files in custom_fields folder containing the respective custom field names. Both need to be updated. Here you can change how the custom fields names appear as well. Chaning the custom fields names is what changes the placeholder names.
   Example: episode_id custom field name = {episode_id} placeholder
-           Changig "episode_id" to "epi_id" will change the placeholder to {epi_id} etc.
+           Changing "CaseNum" to "Case#" will change the placeholder to {Case#} etc.
            Again, make sure you update both files--the json and the corresponding text file in custom_fields folder.
+    - Patient, Episode, Order and MRnum are all hardcoded into SQM and cannot be changed, only the order.
 - The order the custom fields appear in can be adjusted by changing the order they appear from top>bottom in the .json file.
 - Custom parsing patterns can be defined in the `custom_patterns.json` file. This is used to update the language customers use to define how an episodeID is parsed as well as orderIDs. Follow the json format by adding a comma after the last row (whether episodeID or orderID) enclosed in double quotes. Most formats have already been accounted for.
+
 
 ## Troubleshooting
 
