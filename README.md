@@ -43,10 +43,10 @@ Installer for updates to SQM
 ## Customization
 
 - Custom fields can be added or removed by editing the `custom_fields_order.json` file and the text files in custom_fields folder containing the respective custom field names. Both need to be updated. Here you can change how the custom fields names appear as well. Chaning the custom fields names is what changes the placeholder names.
-  Example: episode_id custom field name = {episode_id} placeholder
-           Changing "CaseNum" to "Case#" will change the placeholder to {Case#} etc.
-           Again, make sure you update both files--the json and the corresponding text file in custom_fields folder.
-    - Patient, Episode, Order and MRnum are all hardcoded into SQM and cannot be changed, only the order.
+  - Example: episode_id custom field name = {episode_id} placeholder
+    - Changing "CaseNum" to "Case#" will change the placeholder to {Case#} etc.
+    - Again, make sure you update both files--the json and the corresponding text file in custom_fields folder.
+- Patient, Episode, Order and MRnum are all hardcoded into SQM and _cannot be changed_, **only the order**.
 - The order the custom fields appear in can be adjusted by changing the order they appear from top>bottom in the .json file.
 - Custom parsing patterns can be defined in the `custom_patterns.json` file. This is used to update the language customers use to define how an episodeID is parsed as well as orderIDs. Follow the json format by adding a comma after the last row (whether episodeID or orderID) enclosed in double quotes. Most formats have already been accounted for.
 
