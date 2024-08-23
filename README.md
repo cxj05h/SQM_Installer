@@ -31,7 +31,7 @@ Installer for updates to SQM
       
 - If a customer just provides a bunch of numbers, whether it's episode IDs or order IDs and it's not simple to just highlight them all, you can also go to Advanced > Parse Orders/Parse Episodes and there you'll receive a dialog box with a number. That number is the number of characters it will parse for. For example, typically order IDs are 6-7 digits so you can select "Parse Orders" choose the digit count (you can hover over the field and use the mouse wheel to scroll up and down to select the number) and hit parse. If you don't have Stephan's AHK script for comma-separated pastes, this is the best, really.
 - Most requests have multiple dates and service codes in the text. When you "Parse Service Code" or "Parse Dates" (also included in "Parse All"), a dialogue box will appear for you to select which dates and service codes you want populated into PDM. Dates will always appear in the {Date} custom field, and service codes always in the {Service_Code} field.
-    - When the box appears, hitting "**Enter**" once will load all the dates available and hitting it again will select "Ok". This applies to both SC and Dates.
+    - When the box appears, hitting "**Enter**" once will load all the dates available and hitting it again will select "Ok". This applies to both SC and Dates. Hitting **'Esc'** will abort that dialogue box.
 
 ### Generating Statements
 
