@@ -30,8 +30,8 @@ Installer for updates to SQM
         *SELECT epi_lastname, epi_firstname, epi_mi, epi_id from client_episodes_all WHERE {names_clause}*
       
 - If a customer just provides a bunch of numbers, whether it's episode IDs or order IDs and it's not simple to just highlight them all, you can also go to Advanced > Parse Orders/Parse Episodes and there you'll receive a dialog box with a number. That number is the number of characters it will parse for. For example, typically order IDs are 6-7 digits so you can select "Parse Orders" choose the digit count (you can hover over the field and use the mouse wheel to scroll up and down to select the number) and hit parse. If you don't have Stephan's AHK script for comma-separated pastes, this is the best, really.
-- Most requests have multiple dates and service codes in the text. When you "Parse Service Code" or "Parse Dates" (also included in "Parse All"), a dialogue box will appear for you to select which dates and service codes you want populated into PDM. Dates will always appear in the {Date} custom field, and service codes always in the {Service_Code} field.
-    - When the box appears, hitting "**Enter**" once will load all the dates available and hitting it again will select "Ok". This applies to both SC and Dates.
+- Most requests have multiple dates and service codes in the text. When you "Parse Service Code" or "Parse Dates" (also included in "Parse All"), a dialog box will appear for you to select which dates and service codes you want populated into PDM. Dates will always appear in the {Date} custom field, and service codes always in the {Service_Code} field.
+    - When the box appears, hitting "**Enter**" once will load all the dates available and hitting it again will select "Ok". This applies to both SC and Dates. Hitting **'Esc'** will abort that dialog box.
 
 ### Generating Statements
 
@@ -49,6 +49,9 @@ Installer for updates to SQM
 - Patient, Episode, Order and MRnum are all hardcoded into SQM and _cannot be changed_, **only the order**.
 - The order the custom fields appear in can be adjusted by changing the order they appear from top>bottom in the .json file.
 - Custom parsing patterns can be defined in the `custom_patterns.json` file. This is used to update the language customers use to define how an episodeID is parsed as well as orderIDs. Follow the json format by adding a comma after the last row (whether episodeID or orderID) enclosed in double quotes. Most formats have already been accounted for.
+
+## Image to text
+- Drag customer's image to the plain text box and wait for it to be converted to text. May not work with all images. Should be JPEG, PNG or PDF.
 
 
 ## Troubleshooting
