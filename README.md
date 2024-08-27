@@ -51,7 +51,7 @@ Installer for updates to SQM
 - Custom parsing patterns can be defined in the `custom_patterns.json` file. This is used to update the language customers use to define how an episodeID is parsed as well as orderIDs. Follow the json format by adding a comma after the last row (whether episodeID or orderID) enclosed in double quotes. Most formats have already been accounted for.
 
 ## Image to text
-- Drag customer's image to the plain text box and wait for it to be converted to text. May not work with all images. Should be JPEG, PNG or PDF.
+- Drag customer's image to the plain text box and wait for it to be converted to text. May not work with all images. Should be JPEG, PNG or BMP. You might need to take a screenshot of their image to easily reformat the image and also exclude problematic parts of the image which won't convert well. Works best with screenshots of reports or spreadsheets.
 
 
 ## Troubleshooting
