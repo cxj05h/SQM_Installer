@@ -60,7 +60,7 @@ Installer for updates to SQM
 - Ensure all required JSON files (`custom_fields_order.json`, `custom_patterns.json`, `name_parsing_rules.json`, `statement_generators.json`) are present in the application directory (C:\Users\AppData\Local\Programs\SQL Query Manager).
 
 ## Updates
-- If an update is available, you will be prompted upron running the app. **As for now forlders: Custom_fields_order, Custom_patterns, Name_parsing_rules, Service_Codes will all be reinstalled. If you have made any changes to these files, it's best to save them/copy them to another location and drag/drop them back into the app folder (C:\Users\AppData\Local\Programs\SQL Query Manager) since after the update, they might be reverted to the intial install state. **
+- If an update is available, you will be prompted upron running the app. **As for now forlders: Custom_fields_order, Custom_patterns, Name_parsing_rules, Service_Codes will all be REINSTALLED. If you have made any changes to these files, it's best to SAVE THEM/copy them to another location and drag/drop them back into the app folder AFTER NEW INSTALL (C:\Users\AppData\Local\Programs\SQL Query Manager) since after the update, they might be reverted to the intial install state.** 
 
 ## Contributing
 
