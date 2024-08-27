@@ -56,8 +56,11 @@ Installer for updates to SQM
 
 ## Troubleshooting
 
-- If you encounter any issues, check the `sql_query_manager.log` file for error messages. Most errors are self-explanitory and usually have to do with syntax of the saved query. In other words, there's a placeholder typed incorrectly there.
-- Ensure all required JSON files (`custom_fields_order.json`, `custom_patterns.json`, `name_parsing_rules.json`, `statement_generators.json`) are present in the application directory.
+- If you encounter any issues, check the `sql_query_manager.tct` file (C:\Users\AppData\Local\SQL Query Manager) for error messages. Most errors are self-explanitory and usually have to do with syntax of the saved query. In other words, there's a placeholder typed incorrectly there.
+- Ensure all required JSON files (`custom_fields_order.json`, `custom_patterns.json`, `name_parsing_rules.json`, `statement_generators.json`) are present in the application directory (C:\Users\AppData\Local\Programs\SQL Query Manager).
+
+## Updates
+- If an update is available, you will be prompted upron running the app. **As for now forlders: Custom_fields_order, Custom_patterns, Name_parsing_rules, Service_Codes will all be reinstalled. If you have made any changes to these files, it's best to save them/copy them to another location and drag/drop them back into the app folder (C:\Users\AppData\Local\Programs\SQL Query Manager) since after the update, they might be reverted to the intial install state. **
 
 ## Contributing
 
