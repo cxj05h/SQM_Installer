@@ -50,6 +50,29 @@ Installer for updates to SQM
 - The order the custom fields appear in can be adjusted by changing the order they appear from top>bottom in the .json file.
 - Custom parsing patterns can be defined in the `custom_patterns.json` file. This is used to update the language customers use to define how an episodeID is parsed as well as orderIDs. Follow the json format by adding a comma after the last row (whether episodeID or orderID) enclosed in double quotes. Most formats have already been accounted for.
 
+## Parsing and Populating Dates for Multiple Fields
+
+As of v1.1.3, you can now preface any custom field/placeholder to flag it as a 'date' data type. This means any date found in the Notepad field is eligible for parsing in multiple fields. Which fields they slot into depend on the saved query you have selected. Within your saved query, if you want to use any other custom field (besides {Date}) as a date type, you just need to add '@' before to the right side of the first curly bracket, before the start of the custom field name. This signifies to SQM that you want this to act as a date. When 'Populate Query' runs, it will automatically add single quotes to that placeholder. Only one date per field (besides {Date} is allowed in the "borrowed" custom fields being used as dates. 
+
+When multiple dates are found in the Notepad, you will get a dialog box accompanied by the Guidance Text you've used in that saved query asking you which date you want for that custom field. See below for how to incoroporate the guidance text.
+
+## Guidance Text
+
+Guidance text is used to help you customize the custom fields names. Not each query you use will use the hardcoded names, so you'll want extra text to suite each query.
+
+For example, if you want to use the {Service_Code} custom field as a placeholder for a 'wkr_lastname' - you want this to be clear when you select the query. 
+
+For this, you'll want to add Guidance Text at very top of your saved query (make sure it's using the first line of the saved query only!). you'll need to write out the following in the exact way in order for SQM to recognize the guidance text:
+
+Example using {episode_id} as the placeholder you want to modify:
+GUIDANCE:{episode_id}`/*this is the guidance text*/`
+
+### Use 'Guidance Text' to add text to the Patient Data Management screen as well as the Date Selector prompts. 
+
+Example of guidance text at the top of a saved query to reference which dates are for what part of the query: 
+
+GUIDANCE:{@Service_Code}`/*New visit date*/`,GUIDANCE:{@EventID}`/*SOC Date*/`
+
 ## Image to text
 - Drag customer's image to the plain text box and wait for it to be converted to text. May not work with all images. Should be JPEG, PNG or BMP. You might need to take a screenshot of their image to easily reformat the image and also exclude problematic parts of the image which won't convert well. Works best with screenshots of reports or spreadsheets.
 
