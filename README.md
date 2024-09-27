@@ -19,7 +19,7 @@ Installer for updates to SQM
 2. Select a query from the list on the right.
 3. Click "Populate Query" to insert the data into the selected query template. **(Ctrl + Enter)**
 4. The populated query will appear in the bottom right text area, ready to be copied and executed. Once "populate query" runs, the populated query is automatically copied to your clipboard, but there's also a button "Copy Query for SSMS" .
-5. The {Date} field and {MRnum} field will ALWAYS add single quotes after the text that is in those fields when the query is populated. 
+5. The {Date} field and {MRnum} field will ALWAYS add single quotes after the text that is in those fields when Populate Query runs. If you Parse All/Parse Pt. Data then the MRnum field will show you single quotes before you run Populate Query. This is to indicate the field can only be used with single quotes. I will update this in the future to allow the field to accept %% so it can be used for `LIKE (%wkr_last_name%)` for example.
 
 ### Parsing Data
 
