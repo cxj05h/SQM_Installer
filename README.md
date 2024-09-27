@@ -19,6 +19,7 @@ Installer for updates to SQM
 2. Select a query from the list on the right.
 3. Click "Populate Query" to insert the data into the selected query template. **(Ctrl + Enter)**
 4. The populated query will appear in the bottom right text area, ready to be copied and executed. Once "populate query" runs, the populated query is automatically copied to your clipboard, but there's also a button "Copy Query for SSMS" .
+5. The {Date} field and {MRnum} field will ALWAYS add single quotes after the text that is in those fields when the query is populated. 
 
 ### Parsing Data
 
